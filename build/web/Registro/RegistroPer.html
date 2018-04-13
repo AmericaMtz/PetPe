@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>REGISTRO</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <LINK REL=StyleSheet HREF="../DocumentosCSS/Estilos.css" TYPE="text/css" MEDIA=screen>
+        <link rel="stylesheet" type="text/css" href="../DocumentosCSS/tcal.css" />
+        <script type="text/javascript" src="../JavaScript/tcal.js"></script> 
+           <script src="../JavaScript/javas.js"></script>
+    </head>
+    
+    
+    <body onLoad="document.formulario.appat.focus();">
+        <form name="formulario"  method="post" action="../JPS/Registro.jsp">
+            <div class="dos" id="derechod">
+                    
+            </div>
+                <div class="uno" id="derecho"><center>
+                    <p style="font-family:'Facelift'; color: #009999; font-size: 4em;"> REGÍSTRATE </p>
+                    <br><br>
+                    <INPUT type="text" id="appat" name="appat" placeholder="Apellido Paterno" style="width:250px; height:35px; font-size: 15px;" onkeypress="letras()()" required/>
+                    <INPUT type="text" id="apmat" name="apmat" placeholder="Apellido Materno" style="width:250px; height:35px; font-size: 15px;" size=30 onkeypress="letras()" required/> 
+                    <br><br>
+                    <INPUT type="text" name="nombre" placeholder="Nombre(s)" style="width:300px; height:35px; font-size: 15px;" id="noms" size=30 onkeypress="letras()" required/> 
+                    <input type="text" name="date" placeholder="Fecha de nacimiento" style="width:200px; height:35px; font-size: 15px;" class="tcal" value="" required/>
+                    <br><br>
+                    <INPUT type="text" name="matri" placeholder="Matrícula" style="width:250px; height:35px; font-size: 15px;" id="mat" size=30 maxlength="10" onkeypress="nume()" required/>
+                    <INPUT type="text" name="celu" placeholder="Celular" style="width:250px; height:35px; font-size: 15px;" id="cel" size=30 maxlength="10" onkeypress="nume()" required/>
+                    <br><br>
+                    <INPUT id="correo" type="text" name="correo" placeholder="Correo Electrónico" style="width:500px; height:35px; font-size: 15px;" size=30 onkeypress="corre()" required/>
+                    <br><br>
+                    <INPUT type="text" name="nn" placeholder="Nick Name" style="width:166.6px; height:35px; font-size: 15px;" id="nina" size=30 required/>
+                    <INPUT type="password" name="contra" placeholder="Contraseña" style="width:166.6px; height:35px; font-size: 15px;" id="con" size=30 onblur="contrahabi()" required/>
+                    <INPUT type="password" name="contracom" placeholder="Confirma Contraseña" style="width:166.6px; height:35px; font-size: 15px;" disabled="" id="concom" size=30 onblur="confirma()" required/>
+                    <br><br>
+                    <p align="right">
+                        <INPUT type="submit" class="boton" name="bot" value="Registra" id="botreg">
+                    </p>
+                </center></div>
+                <div class="dos" id="izquierdo">
+                    
+                </div>
+        </form>
+    </body>
+</html>
