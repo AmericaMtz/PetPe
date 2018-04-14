@@ -28,7 +28,7 @@ $(document).ready(function(){
 	});
 
 });
-$('#btn').click(function(){
-    $('#modal').modal();
-});
 
+function close(){
+    $("#algo").close();
+}
