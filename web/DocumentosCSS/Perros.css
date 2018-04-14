@@ -133,21 +133,7 @@ div.contenedor:hover #h{
     -webkit-box-shadow: 0px 0px 0px 0px rgba(255,255,255,.6);
 }
 
-#ventana{
-    z-index:300;
-    width: 40%;
-    height: 60%; 
-    position: fixed;
-    top:200px;
-    left: 400px;
-    background: rgba(208,101,3,.7);
-}
-#ventana img{
-    height: 30px;
-    width: 25px;
-}
-#cerrar{
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}
+
+
+
+

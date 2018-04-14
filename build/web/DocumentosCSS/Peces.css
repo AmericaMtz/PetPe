@@ -101,15 +101,15 @@ div#seis{
     width: 120px;
     height: 120px;
     display: block;
-    margin: 30px auto;
+    margin: 50px auto;
     background-color: rgba(355,255,255,.15);
-    padding: 10px;
+    padding: 20px;
     -webkit-border-radius: 50%;
     -webkit-box-shadow: 0px 0px 0px 30px rgba(255,255,255,0);
     -webkit-transition: box-shadow .4s;
 }
  a{
-    padding: 10px;
+    padding: 26px;
     font-size: 20px;
     color: white;
     
@@ -123,10 +123,10 @@ p.texto{
     -webkit-transition: padding-top .4s;
 }
 div.contenedor:hover{
-    height: 200px;
+    height: 300px;
 }
 div.contenedor:hover p.texto{
-    padding-top: 20px;
+    padding-top: 30px;
     opacity: 1;
 }
 div.contenedor:hover #h{
