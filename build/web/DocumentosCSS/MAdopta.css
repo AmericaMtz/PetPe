@@ -6,11 +6,21 @@
     font-family: 'Poor Story', cursive;
     font-size: 20px;
 }
+/*scroll barra contenedor*/
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+/*scroll barra*/
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(69, 124, 144, 1);
+}
+
 section#banner{
     width: 100%;
     background-image: url(../Resourses/gifs/ballena.gif);
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -55,47 +65,21 @@ img#logo{
     border-radius: 50%;
 }
 #conteframe{
-    overflow: scroll;
+    overflow: auto;
+    overflow-x: hidden;
     height: 100%;
-    width: 90%;
+    width: 100%;
     background-color: #20BABA;
     position: absolute;
     -webkit-box-orient: horizontal;
 }
 
-img{
-    height:50vh;
+#conteframe img{
+    width: 17.6vw;
+    height: 47vh;
     float: left;
-    padding: 10px;
+    margin-left: 3vh;
+    margin-top: 3vh;
 }
-
-.uno{
-    -webkit-box-flex: 1;
-    -webkit-box-orient: horizontal;
-}
-
-.dos{
-    -webkit-box-flex: 2;
-    -webkit-box-orient: horizontal;
-}
-
-.tres{
-    -webkit-box-flex: 3;
-    -webkit-box-orient: horizontal;
-}
-
-.cuatro{
-    -webkit-box-flex: 4;
-    -webkit-box-orient: horizontal;
-}
-
-.cinco{
-    -webkit-box-flex: 5;
-    -webkit-box-orient: horizontal;
-}
-
-
-
-
 
 
