@@ -1,4 +1,4 @@
-package org.apache.jsp.Registro;
+package org.apache.jsp.JPS;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -6,7 +6,7 @@ import javax.servlet.jsp.*;
 import java.io.*;;
 import java.sql.*;;
 
-public final class R_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class RegistroPersona_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -53,42 +53,7 @@ public final class R_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <meta charset=\"UTF-8\">\n");
       out.write("        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n");
       out.write("        <LINK REL=StyleSheet HREF=\"../DocumentosCSS/Estilos.css\" TYPE=\"text/css\" MEDIA=screen>\n");
-      out.write("        <script>\n");
-      out.write("        function validarPasswd(){\n");
-      out.write("            var p1 = document.getElementById(\"con\").value;\n");
-      out.write("            var p2 = document.getElementById(\"concom\").value;\n");
-      out.write("            if(p1 === p2){\n");
-      out.write("                return true;\n");
-      out.write("            }\n");
-      out.write("            else\n");
-      out.write("                alert(\"Las contraseñas no coinciden\");\n");
-      out.write("                return false;\n");
-      out.write("        }\n");
-      out.write("        function mayus(e) {\n");
-      out.write("            e.value = e.value.toUpperCase();\n");
-      out.write("        }\n");
-      out.write("        function letras(){\n");
-      out.write("            var letras = \" abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ\";\n");
-      out.write("            var x = event.keyCode;\n");
-      out.write("            var letra = String.fromCharCode(x);\n");
-      out.write("            var n = letras.indexOf(letra);\n");
-      out.write("            var texto = noms.value;\n");
-      out.write("            if (letra === ' '){\n");
-      out.write("                if(texto.indexOf(' ') !== -1)\n");
-      out.write("                    event.returnValue = false;\n");
-      out.write("            }\n");
-      out.write("            if (n===-1)\n");
-      out.write("                event.returnValue= false;\n");
-      out.write("        }\n");
-      out.write("        function nume(){\n");
-      out.write("            var numeros = \"1234567890\";\n");
-      out.write("            var x = event.keyCode;\n");
-      out.write("            var numero = String.fromCharCode(x);\n");
-      out.write("            var n = numeros.indexOf(numero);\n");
-      out.write("            if (n===-1)\n");
-      out.write("                event.returnValue= false;\n");
-      out.write("        }\n");
-      out.write("        </script>\n");
+      out.write("        <script src=\"../../../JavaScript/Registro.js\"></script>\n");
       out.write("    </head>\n");
       out.write("    <body>\n");
       out.write("        <div class=\"contenedor\">\n");
@@ -148,7 +113,7 @@ public final class R_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("                    <br><br>\n");
       out.write("                    <INPUT type=\"text\" id=\"correo\" name=\"correo\" placeholder=\"Correo Electrónico\" maxlength=\"50\" required/>\n");
-      out.write("                    <INPUT type=\"text\" id=\"cel\" name=\"celu\" placeholder=\"Celular\" maxlength=\"10\" onkeypress=\"nume()\" required/>\n");
+      out.write("                    <INPUT type=\"text\" id=\"cel\" name=\"celu\" placeholder=\"Celular\" maxlength=\"10\" minlength=\"10\" onkeypress=\"nume()\" required/>\n");
       out.write("                    <br><br>\n");
       out.write("                    <INPUT type=\"text\" id=\"nina\" name=\"nn\" placeholder=\"Nick Name\" maxlength=\"25\" onkeyup=\"mayus(this);\" required/>\n");
       out.write("                    <INPUT type=\"password\" id=\"con\" name=\"contra\" placeholder=\"Contraseña\" maxlength=\"20\" required/>\n");
