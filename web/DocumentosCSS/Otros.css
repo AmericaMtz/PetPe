@@ -247,7 +247,7 @@ div.contenedor:hover #h{
 }
 .algo>div{
     
-    width: 30%;
+    width: 42%;
     position: relative;
     margin: 10% auto;
     padding: 5px 20px 13px 20px;
@@ -266,7 +266,7 @@ div.contenedor:hover #h{
     -moz-box-shadow: 1px 1px 3px #000;
     -webkit-box-shadow: 1px 1px 3px #000;
     font-family: 'Source Sans Pro', sans-serif;
-    transform: translateX(-100%);
+    transform: translateX(-60%);
     border-radius: 10%;
 
 
