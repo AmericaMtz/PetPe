@@ -7,48 +7,69 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title></title>
     </head>
-    <script>
-        function mensaje(){
-            alert("Registro dado de alta");
-        }
-        </script>
     <body>
         <%
-            String appate = request.getParameter("appat");
-            String apmate= request.getParameter("apmat");
-            String nombree= request.getParameter("nombre");
-            String fecha= request.getParameter("date");
-            int matricu = Integer.parseInt(request.getParameter("matri"));
-            int cel = Integer.parseInt(request.getParameter("celu"));
-            String correoo= request.getParameter("correo");
-            String nickname= request.getParameter("nn");
-            String contras= request.getParameter("contra");
+            String nom = request.getParameter("nombre");
+            String appat = request.getParameter("appat");
+            String apmat = request.getParameter("apmat");
+            String correo = request.getParameter("correo");
+            String cel = request.getParameter("celu");
+            String nick = request.getParameter("nn");
+            String contra = request.getParameter("contra");
+            String colo = request.getParameter("colonia");
+            String dele = request.getParameter("delegacion");
+            String idcol = "";
+            String iddel = "";
             
-            
-            Connection con=null;
-            Statement sta= null;
-            
-            try
-            {
-                Class.forName("com.mysql.jdbc.Driver").newInstance();
-                con= DriverManager.getConnection("jdbc:mysql://localhost/HHB","root","n0m3l0");
-                sta= con.createStatement();
-            }
-            catch(SQLException error) {
-                out.print(error.toString());
-            }
-            try{
-                sta.executeUpdate("INSERT INTO personas VALUES('"+appate+"','"+apmate+"','"+nombree+"','"+fecha+"','"+matricu+"','"+cel+"',"
-                        + "'"+correoo+"','"+nickname+"','"+contras+"');");
+                Connection con=null;
+                Statement sta= null;
+                ResultSet r = null;
+
+                try
+                {
+                    Class.forName("com.mysql.jdbc.Driver").newInstance();
+                    con= DriverManager.getConnection("jdbc:mysql://localhost/PP","root","n0m3l0");
+                    sta= con.createStatement();
+                }
+                catch(SQLException error) {
+                    out.print(error.toString());
+                }
+                try{
+                    r = sta.executeQuery("select Id_Colonia from cat_colonias where Nom_Colonia='"+colo+"';");
+                    if(r.next()){
+                        idcol = r.getString("Id_Colonia");
+                    }
+                    r = sta.executeQuery("select Id_Delegacion from cat_delegaciones where Nom_Delegacion='"+dele+"';");
+                    if(r.next()){
+                        iddel = r.getString("Id_Delegacion");
+                    }
                 
-                out.println("<script>mensaje();</script>");
-                con.close();
-                
-                out.print("<META HTTP-EQUIV='REFRESH' CONTENT='.0000001; URL=http://localhost:8080/PetPeti/InicioDeSesion/InicioDeSesion.html'/>");
-            }
-            catch(SQLException error){
-                out.print(error.toString());
-            }
+                CallableStatement ps = con.prepareCall("{call AltasP(?,?,?,?,?,?,?,?,?,?,?)}");
+                    ps.setInt(1, 0);//id
+                    ps.setString(2, nick);//nick
+                    ps.setString(3, nom);//nombre
+                    ps.setString(4, appat);//apellido paterno
+                    ps.setString(5, apmat);//apellido materno
+                    ps.setString(6, contra);//contraseña
+                    ps.setString(7, correo);//correo
+                    ps.setString(8, cel);//telefono
+                    ps.setString(9, idcol);//colonia
+                    ps.setString(10, iddel);//delegacion
+                    ps.registerOutParameter(11, Types.INTEGER);
+                    ps.execute();
+                    int resultado = ps.getInt(11);
+                    ps.close();
+                    if(resultado==1){
+                        out.print("<script> alert('Persona agregada'); </script>");
+                    }
+                    else
+                        if(resultado==2){
+                            out.print("<script> alert('Persona ya existe'); </script>");
+                        }
+                    
+                }catch(SQLException error) {
+                    out.print(error.toString());
+                }
         %>
     </body>
 </html>

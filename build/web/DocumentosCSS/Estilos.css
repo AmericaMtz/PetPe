@@ -57,6 +57,7 @@ body{
 .contenedor [type="text"]{
     height:6.5vh;
     border-radius: 5px;
+    -webkit-text-transform: uppercase;
 }
 .contenedor [type="password"]{
     height:6.5vh;
