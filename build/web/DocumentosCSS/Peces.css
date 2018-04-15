@@ -176,8 +176,8 @@ div#seis{
      box-shadow:  20px 0px 70px black;
 }
 #h{
-    width: 90px;
-    height: 90px;
+    width: 110px;
+    height: 100px;
     display: block;
     margin: 50px auto;
     background-color: rgba(355,255,255,.15);
@@ -247,7 +247,7 @@ div.contenedor:hover #h{
 }
 .algo>div{
     
-    width: 30%;
+    width: 50%;
     position: relative;
     margin: 10% auto;
     padding: 5px 20px 13px 20px;
@@ -293,7 +293,7 @@ div.contenedor:hover #h{
      50%{
         background-position: 300% 0;
      }
-     1000%{
+     100%{
         background-position: 0 0;
      }
  }
