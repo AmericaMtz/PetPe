@@ -28,6 +28,9 @@ $(document).ready(function(){
 	});
 
 });
+function close(){
+    $("#algo").close();
+}
 
 
 
