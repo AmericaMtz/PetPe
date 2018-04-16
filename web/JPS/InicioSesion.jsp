@@ -6,6 +6,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+         <LINK REL=StyleSheet HREF="../DocumentosCSS/EstilosR.css" TYPE="text/css" MEDIA=screen>
     </head>
     <body>
         <% 
@@ -38,11 +39,11 @@
                     }
                     else
                         if(resultado==4){
-                            out.print("<script> alert('Contraseña incorrecta'); </script>");
+                            out.println("<div><a href='../InicioDeSesion/InicioDeSesion.html'><center>CONTRASEÑA INCORRECTA</center></a></div>");
                         }
                     else
                         if(resultado==5){
-                            out.print("<script> alert('El registro no existe'); </script>");
+                            out.println("<div><a href='../InicioDeSesion/InicioDeSesion.html'><center>EL REGISTRO NO EXISTE</center></a></div>");
                         }
                 }catch(SQLException error) {
                     out.print(error.toString());

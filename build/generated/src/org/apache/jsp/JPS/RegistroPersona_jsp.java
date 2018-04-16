@@ -43,29 +43,29 @@ public final class RegistroPersona_jsp extends org.apache.jasper.runtime.HttpJsp
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("<!DOCTYPE html>\n");
-      out.write("<html>\n");
-      out.write("    <head>\n");
-      out.write("        <title>REGISTRO</title>\n");
-      out.write("        <meta charset=\"UTF-8\">\n");
-      out.write("        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n");
-      out.write("        <LINK REL=StyleSheet HREF=\"../DocumentosCSS/Estilos.css\" TYPE=\"text/css\" MEDIA=screen>\n");
-      out.write("        <script src=\"../../../JavaScript/Registro.js\"></script>\n");
-      out.write("    </head>\n");
-      out.write("    <body>\n");
-      out.write("        <div class=\"contenedor\">\n");
-      out.write("            <form name=\"formulario\" onSubmit=\"return validarPasswd()\" method=\"post\" action=\"../JPS/Registro.jsp\">\n");
-      out.write("                <center>\n");
-      out.write("                    <p class=\"titulo\"> REGÍSTRATE </p>\n");
-      out.write("                    <br><br>\n");
-      out.write("                    <INPUT type=\"text\" id=\"noms\" name=\"nombre\" placeholder=\"Nombre(s)\" maxlength=\"25\" onkeyup=\"mayus(this);\" onkeypress=\"letras()\" required/> \n");
-      out.write("                    <INPUT type=\"text\" id=\"appat\" name=\"appat\" placeholder=\"Apellido Paterno\" maxlength=\"20\" onkeyup=\"mayus(this);\" onkeypress=\"letras()\" required/>\n");
-      out.write("                    <INPUT type=\"text\" id=\"apmat\" name=\"apmat\" placeholder=\"Apellido Materno\" maxlength=\"20\" onkeyup=\"mayus(this);\" onkeypress=\"letras()\" required/> \n");
-      out.write("                    <br><br>\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("<!DOCTYPE html>\r\n");
+      out.write("<html>\r\n");
+      out.write("    <head>\r\n");
+      out.write("        <title>REGISTRO</title>\r\n");
+      out.write("        <meta charset=\"UTF-8\">\r\n");
+      out.write("        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n");
+      out.write("        <LINK REL=StyleSheet HREF=\"../DocumentosCSS/Estilos.css\" TYPE=\"text/css\" MEDIA=screen>\r\n");
+      out.write("        <script src=\"../JavaScript/Registro.js\"></script>\r\n");
+      out.write("    </head>\r\n");
+      out.write("    <body>\r\n");
+      out.write("        <div class=\"contenedor\">\r\n");
+      out.write("            <form name=\"formulario\" onSubmit=\"return validarPasswd()\" method=\"post\" action=\"../JPS/Registro.jsp\">\r\n");
+      out.write("                <center>\r\n");
+      out.write("                    <p class=\"titulo\"> REGÍSTRATE </p>\r\n");
+      out.write("                    <br><br>\r\n");
+      out.write("                    <INPUT type=\"text\" id=\"noms\" name=\"nombre\" placeholder=\"Nombre(s)\" maxlength=\"25\" onkeyup=\"mayus(this);\" onkeypress=\"letras()\" required/> \r\n");
+      out.write("                    <INPUT type=\"text\" id=\"appat\" name=\"appat\" placeholder=\"Apellido Paterno\" maxlength=\"20\" onkeyup=\"mayus(this);\" onkeypress=\"letras()\" required/>\r\n");
+      out.write("                    <INPUT type=\"text\" id=\"apmat\" name=\"apmat\" placeholder=\"Apellido Materno\" maxlength=\"20\" onkeyup=\"mayus(this);\" onkeypress=\"letras()\" required/> \r\n");
+      out.write("                    <br><br>\r\n");
+      out.write("\r\n");
       out.write("                        ");
 
 
@@ -110,22 +110,22 @@ public final class RegistroPersona_jsp extends org.apache.jasper.runtime.HttpJsp
                                 }
                             out.println("</select>");
                         
-      out.write("\n");
-      out.write("                    <br><br>\n");
-      out.write("                    <INPUT type=\"text\" id=\"correo\" name=\"correo\" placeholder=\"Correo Electrónico\" maxlength=\"50\" required/>\n");
-      out.write("                    <INPUT type=\"text\" id=\"cel\" name=\"celu\" placeholder=\"Celular\" maxlength=\"10\" minlength=\"10\" onkeypress=\"nume()\" required/>\n");
-      out.write("                    <br><br>\n");
-      out.write("                    <INPUT type=\"text\" id=\"nina\" name=\"nn\" placeholder=\"Nick Name\" maxlength=\"25\" onkeyup=\"mayus(this);\" required/>\n");
-      out.write("                    <INPUT type=\"password\" id=\"con\" name=\"contra\" placeholder=\"Contraseña\" maxlength=\"20\" required/>\n");
-      out.write("                    <INPUT type=\"password\" id=\"concom\" name=\"contracom\" placeholder=\"Confirma Contraseña\" maxlength=\"20\" required/>\n");
-      out.write("                    <br><br><br>\n");
-      out.write("                    <p align=\"right\">\n");
-      out.write("                        <INPUT type=\"submit\" class=\"boton\" name=\"bot\" value=\"Registra\" id=\"botreg\">\n");
-      out.write("                    </p>\n");
-      out.write("                </center>\n");
-      out.write("            </form>\n");
-      out.write("        </div>\n");
-      out.write("    </body>\n");
+      out.write("\r\n");
+      out.write("                    <br><br>\r\n");
+      out.write("                    <INPUT type=\"text\" id=\"correo\" name=\"correo\" placeholder=\"Correo Electrónico\" maxlength=\"50\" required/>\r\n");
+      out.write("                    <INPUT type=\"text\" id=\"cel\" name=\"celu\" placeholder=\"Celular\" maxlength=\"10\" minlength=\"10\" onkeypress=\"nume()\" required/>\r\n");
+      out.write("                    <br><br>\r\n");
+      out.write("                    <INPUT type=\"text\" id=\"nina\" name=\"nn\" placeholder=\"Nick Name\" maxlength=\"25\" onkeyup=\"mayus(this);\" required/>\r\n");
+      out.write("                    <INPUT type=\"password\" id=\"con\" name=\"contra\" placeholder=\"Contraseña\" maxlength=\"20\" required/>\r\n");
+      out.write("                    <INPUT type=\"password\" id=\"concom\" name=\"contracom\" placeholder=\"Confirma Contraseña\" maxlength=\"20\" required/>\r\n");
+      out.write("                    <br><br><br>\r\n");
+      out.write("                    <p align=\"right\">\r\n");
+      out.write("                        <INPUT type=\"submit\" class=\"boton\" name=\"bot\" value=\"Registra\" id=\"botreg\">\r\n");
+      out.write("                    </p>\r\n");
+      out.write("                </center>\r\n");
+      out.write("            </form>\r\n");
+      out.write("        </div>\r\n");
+      out.write("    </body>\r\n");
       out.write("</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){

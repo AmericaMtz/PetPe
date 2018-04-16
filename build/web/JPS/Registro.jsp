@@ -5,6 +5,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <LINK REL=StyleSheet HREF="../DocumentosCSS/EstilosR.css" TYPE="text/css" MEDIA=screen>
         <title></title>
     </head>
     <body>
@@ -60,11 +61,11 @@
                     int resultado = ps.getInt(11);
                     ps.close();
                     if(resultado==1){
-                        out.print("<script> alert('Persona agregada'); </script>");
+                        out.println("<div><a href='../InicioDeSesion/InicioDeSesion.html'><center>REGISTRO EXITOSO</center></a></div>");
                     }
                     else
                         if(resultado==2){
-                            out.print("<script> alert('Persona ya existe'); </script>");
+                            out.println("<div><a href='../JPS/RegistroPersona.jsp'><center>SELECCIONE OTRO NICKNAME</center></a></div>");
                         }
                     
                 }catch(SQLException error) {
