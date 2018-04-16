@@ -1,6 +1,6 @@
+<%@page import="java.util.ArrayList"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="java.io.*;"%>
-<%@page import="java.sql.*;"%>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -22,48 +22,19 @@
                     <br><br>
 
                         <%
-
-                            out.println("<select id='delegacion' name='delegacion'>");
-                                out.println("<option value='opc0'>Delegacion</option>");
-                                Connection con = null;
-                                Statement sta = null;
-                                ResultSet r = null;
-                                try
-                                {
-                                    Class.forName("com.mysql.jdbc.Driver").newInstance();
-                                    con= DriverManager.getConnection("jdbc:mysql://localhost/PP","root","n0m3l0");
-                                    sta= con.createStatement();
-                                }
-                                catch(SQLException error) {
-                                    out.print(error.toString());
-                                }
-                                try{
-                                    r = sta.executeQuery("select Nom_Delegacion from cat_delegaciones;");
-                                    while(r.next()){
-                                        String delegacion = r.getString("Nom_Delegacion");
-                                        out.println("<option value='"+delegacion+"'>"+delegacion+"</option>");
-                                    }
-                                }
-                                catch(SQLException error) {
-                                    out.print(error.toString());
-                                }
-                            out.println("</select>");
+                            ArrayList<Model.Colonia> colonias = (ArrayList<Model.Colonia>) request.getAttribute("colonias");
+                            ArrayList<Model.Delegacion> delegaciones = (ArrayList<Model.Delegacion>) request.getAttribute("delegaciones");
                             
-                            
-                            out.println("<select id='colonia' name='colonia'>");
-                                out.println("<option value='opc0'>Colonia</option>");
-                                try{
-                                    r = sta.executeQuery("select Nom_Colonia from cat_colonias;");
-                                    while(r.next()){
-                                        String colonia = r.getString("Nom_Colonia");
-                                        out.println("<option>"+colonia+"</option>");
-                                    }
-                                }
-                                catch(Exception error) {
-                                    out.print(error.toString());
-                                }
-                            out.println("</select>");
                         %>
+                        <select id='delegacion' name='delegacion' onchange="getColonias(this)">
+                            <%for(Model.Delegacion delegacion : delegaciones) {
+                                out.println("<option value='"+delegacion.getIdDelegacion()+"' onclick='getColonias(`"+delegacion.getIdDelegacion()+"`)')>"+delegacion.getNom_Delegacion()+"</option>");
+                            }%>
+                        </select>
+                        
+                        <select id='colonias' name='colonias'>
+                            
+                        </select>    
                     <br><br>
                     <INPUT type="text" id="correo" name="correo" placeholder="Correo Electrónico" maxlength="50" required/>
                     <INPUT type="text" id="cel" name="celu" placeholder="Celular" maxlength="10" minlength="10" onkeypress="nume()" required/>
@@ -78,5 +49,31 @@
                 </center>
             </form>
         </div>
+        <script>
+        function getColonias(delegacionId) {
+            console.log(delegacionId.value)
+            let colonias = [<%for(Model.Colonia colonia : colonias) {
+                                out.println("{id: "+colonia.getIdColonia()+", nombre: '"+colonia.getNom_Colonia()+"', delegacion: '"+colonia.getIdDelegacion()+"'},");
+                            }%>]
+
+            let coloniasFiltradas = []
+            let select = document.getElementById("colonias") 
+            for (i = 0; i < select.options.length; i++) {
+                select.remove(i)
+            }
+            for(let colonia of colonias) {
+                console.log(colonia)
+                if(colonia.delegacion == delegacionId.value) {
+                    console.log('YES')
+                    coloniasFiltradas.push(colonia)
+                    let option = document.createElement("option");
+                    option.text = colonia.nombre;
+                    select.add(option)
+                }
+            }
+             console.log(coloniasFiltradas)
+        }
+    </script>
     </body>
+    
 </html>

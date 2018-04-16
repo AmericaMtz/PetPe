@@ -44,6 +44,9 @@ public final class RegistroPersona_jsp extends org.apache.jasper.runtime.HttpJsp
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> e96dd491a899acb4fd45200186046a2018686a85
       out.write("\r\n");
       out.write("\r\n");
       out.write("\r\n");
@@ -67,6 +70,8 @@ public final class RegistroPersona_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("                    <INPUT type=\"text\" id=\"apmat\" name=\"apmat\" placeholder=\"Apellido Materno\" maxlength=\"20\" onkeyup=\"mayus(this);\" onkeypress=\"letras()\" required/> \r\n");
       out.write("                    <br><br>\r\n");
       out.write("\r\n");
+<<<<<<< HEAD
+=======
 =======
       out.write("\n");
       out.write("\n");
@@ -92,6 +97,7 @@ public final class RegistroPersona_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("                    <br><br>\n");
       out.write("\n");
 >>>>>>> 68dec1ae1319e4c50c7aaaa3ceff70e3513947e9
+>>>>>>> e96dd491a899acb4fd45200186046a2018686a85
       out.write("                        ");
 
 
@@ -137,6 +143,9 @@ public final class RegistroPersona_jsp extends org.apache.jasper.runtime.HttpJsp
                             out.println("</select>");
                         
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> e96dd491a899acb4fd45200186046a2018686a85
       out.write("\r\n");
       out.write("                    <br><br>\r\n");
       out.write("                    <INPUT type=\"text\" id=\"correo\" name=\"correo\" placeholder=\"Correo Electrónico\" maxlength=\"50\" required/>\r\n");
@@ -153,6 +162,8 @@ public final class RegistroPersona_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("            </form>\r\n");
       out.write("        </div>\r\n");
       out.write("    </body>\r\n");
+<<<<<<< HEAD
+=======
 =======
       out.write("\n");
       out.write("                    <br><br>\n");
@@ -171,6 +182,7 @@ public final class RegistroPersona_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("        </div>\n");
       out.write("    </body>\n");
 >>>>>>> 68dec1ae1319e4c50c7aaaa3ceff70e3513947e9
+>>>>>>> e96dd491a899acb4fd45200186046a2018686a85
       out.write("</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
