@@ -1,11 +1,15 @@
+<%@page import="java.sql.Types"%>
+<%@page import="java.sql.SQLException"%>
+<%@page import="java.sql.DriverManager"%>
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.Statement"%>
+<%@page import="java.sql.Connection"%>
+<%@page import="java.sql.CallableStatement"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="java.io.*;"%>
-<%@page import="java.sql.*;"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <LINK REL=StyleSheet HREF="../DocumentosCSS/EstilosR.css" TYPE="text/css" MEDIA=screen>
         <title></title>
     </head>
     <body>
@@ -17,7 +21,7 @@
             String cel = request.getParameter("celu");
             String nick = request.getParameter("nn");
             String contra = request.getParameter("contra");
-            String colo = request.getParameter("colonia");
+            String colo = request.getParameter("colonias");
             String dele = request.getParameter("delegacion");
             String idcol = "";
             String iddel = "";
@@ -61,11 +65,11 @@
                     int resultado = ps.getInt(11);
                     ps.close();
                     if(resultado==1){
-                        out.println("<div><a href='../InicioDeSesion/InicioDeSesion.html'><center>REGISTRO EXITOSO</center></a></div>");
+                        out.print("<script> alert('Persona agregada'); </script>");
                     }
                     else
                         if(resultado==2){
-                            out.println("<div><a href='../JPS/RegistroPersona.jsp'><center>SELECCIONE OTRO NICKNAME</center></a></div>");
+                            out.print("<script> alert('Persona ya existe'); </script>");
                         }
                     
                 }catch(SQLException error) {

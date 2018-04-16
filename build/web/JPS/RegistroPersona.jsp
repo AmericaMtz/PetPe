@@ -28,7 +28,7 @@
                         %>
                         <select id='delegacion' name='delegacion' onchange="getColonias(this)">
                             <%for(Model.Delegacion delegacion : delegaciones) {
-                                out.println("<option value='"+delegacion.getIdDelegacion()+"' onclick='getColonias(`"+delegacion.getIdDelegacion()+"`)')>"+delegacion.getNom_Delegacion()+"</option>");
+                                out.println("<option value='"+delegacion.getNom_Delegacion()+"' onclick='getColonias(`"+delegacion.getIdDelegacion()+"`)')>"+delegacion.getNom_Delegacion()+"</option>");
                             }%>
                         </select>
                         
@@ -51,7 +51,7 @@
         </div>
         <script>
         function getColonias(delegacionId) {
-            console.log(delegacionId.value)
+            console.log(delegacionId.selectedIndex+1)
             let colonias = [<%for(Model.Colonia colonia : colonias) {
                                 out.println("{id: "+colonia.getIdColonia()+", nombre: '"+colonia.getNom_Colonia()+"', delegacion: '"+colonia.getIdDelegacion()+"'},");
                             }%>]
@@ -63,11 +63,12 @@
             }
             for(let colonia of colonias) {
                 console.log(colonia)
-                if(colonia.delegacion == delegacionId.value) {
+                if(colonia.delegacion == delegacionId.selectedIndex+1) {
                     console.log('YES')
                     coloniasFiltradas.push(colonia)
-                    let option = document.createElement("option");
-                    option.text = colonia.nombre;
+                    let option = document.createElement("option")
+                    option.text = colonia.nombre
+                    option.value = colonia.nombre
                     select.add(option)
                 }
             }

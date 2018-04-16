@@ -1,6 +1,11 @@
+<%@page import="java.sql.Types"%>
+<%@page import="java.sql.CallableStatement"%>
+<%@page import="java.sql.SQLException"%>
+<%@page import="java.sql.DriverManager"%>
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.Statement"%>
+<%@page import="java.sql.Connection"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="java.io.*;"%>
-<%@page import="java.sql.*;"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -9,6 +14,9 @@
          <LINK REL=StyleSheet HREF="../DocumentosCSS/EstilosR.css" TYPE="text/css" MEDIA=screen>
     </head>
     <body>
+            <form method="GET" action="/MAdopta" id="madopta">
+                <input type="submit" style="display:none;">
+            </form>
         <% 
             String nick = request.getParameter("nomUsua");
             String contra = request.getParameter("contrasenia");
@@ -35,7 +43,7 @@
                     int resultado = ps.getInt(3);
                     ps.close();
                     if(resultado==3){
-                        out.print("<script> alert('Usted a entrado'); </script>");
+                        out.print("<script> alert('Usted a entrado');  document.getElementById('madopta').submit(); </script>");
                     }
                     else
                         if(resultado==4){
@@ -49,6 +57,5 @@
                     out.print(error.toString());
                 }
         %>
-     
     </body>
 </html>

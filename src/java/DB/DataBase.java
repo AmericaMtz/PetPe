@@ -6,6 +6,7 @@
 package DB;
 
 
+import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -78,7 +79,12 @@ public class DataBase {
     
     public int insert(String insert) throws SQLException {
         this.statement = (Statement) connection.createStatement();
+        
         return this.statement.executeUpdate(insert);
+    }
+    
+    public CallableStatement procedure(String procedure) throws SQLException {
+        return this.connection.prepareCall(procedure);
     }
     
 }
