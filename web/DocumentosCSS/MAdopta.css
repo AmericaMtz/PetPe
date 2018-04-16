@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poor+Story');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Gugi');
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
 *
 {
     margin: 0;
@@ -9,6 +12,92 @@
 /*scroll barra contenedor*/
 body::-webkit-scrollbar {
   width: 15px;
+}
+.algo{
+    position: fixed;
+    
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+    
+}
+
+#title{
+    font-family: 'Gugi', cursive;
+}
+.algo:target{
+    opacity: 1;
+    pointer-events: auto;
+}
+.algo>div{
+    
+    width: 30%;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 15px;
+    background:transparent;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    font-family: 'Source Sans Pro', sans-serif;
+    transform: translateX(-100%);
+    border-radius: 10%;
+
+
+}
+.algo>div::before{
+    font-family: 'Source Sans Pro', sans-serif;
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background: linear-gradient(45deg,#006666, #009999, #990033, #990099);
+    width: calc(100% + 4px);
+    height:  calc(100% + 4px);
+    background-size: 400%;
+    z-index: -1;
+    animation: animate 45s linear infinite;
+    border-radius: 15%;
+    
+}
+
+#tache{
+ float: right;
+}
+.close {
+ float: right;
+ margin:0;
+ padding: 0;
+ 
+}
+.close:hover{
+   
+    background: transparent;
+}
+
+
+
+.ABC{
+    -webkit-box-shadow:  0px 15px 20px black;
+    -webkit-border-radius: 20%;
 }
 
 /*scroll barra*/

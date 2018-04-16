@@ -69,7 +69,7 @@
                             out.print("<script> alert('Mascota ya existe'); </script>");
                            
                         }
-                     out.print("<META HTTP-EQUIV='REFRESH' CONTENT='0.00000001;URL=http://localhost:8080/PetPe/MOfrece/Ofrece.html'>");
+                     out.print("<META HTTP-EQUIV='REFRESH' CONTENT='0.00000001;URL=http://localhost:8080/PetPe/JPS/MAdopta.jsp'>");
                 }catch(SQLException error) {
                     out.print(error.toString());
                 }
