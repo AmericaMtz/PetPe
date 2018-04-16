@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <html>
     <head>
         <title>Pet Petition</title>
@@ -26,7 +27,7 @@
                             <li>Ofrece
                                 <ul>
                                     <li><a href="../InicioDeSesion/InicioDeSesion.html">Inicia Sesion</a></li>
-                                    <li><a href="../JPS/RegistroPersona.jsp">Registrate</a></li>
+                                    <li><a href="/RegistroPersona">Registrate</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -36,7 +37,7 @@
                             <li>Ofrece
                                 <ul>
                                     <li><a href="../InicioDeSesion/InicioDeSesion.html">Inicia Sesion</a></li>
-                                    <li><a href="../JPS/RegistroPersona.jsp">Registrate</a></li>
+                                    <li><a href="/RegistroPersona">Registrate</a></li>
                                 </ul>
                             </li>
                         </ul>
