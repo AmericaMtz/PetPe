@@ -62,7 +62,7 @@ public class MAdoptaServlet extends HttpServlet {
                                         rs.getString("Imagen")));
             }
             for(Mascota m : mascotas) {
-                System.out.println(m.getNombre());
+                System.out.println(m.getImagen());
             }
             db.closeConnection();
         }catch (SQLException e) {
@@ -83,7 +83,7 @@ public class MAdoptaServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
+        doGet(request, response);
     }
 
     /**

@@ -41,5 +41,16 @@
     <servlet-name>MAdoptaServlet</servlet-name>
     <url-pattern>/MAdopta</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>RegistroMascotaServlet</display-name>
+    <servlet-name>RegistroMascotaServlet</servlet-name>
+    <servlet-class>Data.RegistroMascotaServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegistroMascotaServlet</servlet-name>
+    <url-pattern>/RegistroMascota</url-pattern>
+  </servlet-mapping>
 
 </web-app>

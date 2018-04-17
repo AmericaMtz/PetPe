@@ -21,7 +21,7 @@
            <nav>
               <ul>
                   <li> <a href="../PaginaPrincipal/index.html">Inicio</a></li>
-                  <li><a href="/JPS/RegistroMascotas.jsp">Registro</a></li>
+                  <li><a href="../RegistroMascota/RMascota.jsp">Registro</a></li>
               </ul> 
                <img id="logo" src="../Resourses/Images/logoPP.png" >
                <ul>
@@ -39,7 +39,7 @@
         out.println("<div id='conteframe'>"); 
         
             for(Mascota mascota : mascotas) {
-              out.println("<a href='#openModal'> <figure><img src='"+mascota.getImagen()+"'></figure> </a>");
+              out.println("<a href='#openModal'> <figure><img src='../data/"+mascota.getImagen()+"'></figure> </a>");
                 out.println("<div id='openModal' class='algo'>");
               out.println("<div>");
                       out.println("<a href='#close' title='Close' class='close' onclick='close();'><div style='float: left'></div><div class='tache'><img src='../Resourses/Images/close.svg' width=3 height=2></div></a>"); 
@@ -50,7 +50,7 @@
                         out.println("<br>");
                         out.println("<p> "+mascota.getEdad()+" AÑOS </p>");
                       out.println("<br>");
-                      out.println("<img src='"+mascota.getImagen()+"' width=50% height=50% class='ABC'>");
+                      out.println("<img src='../data/"+mascota.getImagen()+"' width=50% height=50% class='ABC'>");
                         out.println("<br>");
                         out.println("<p>"+mascota.getDescripcion()+"</p>");
                   out.println("</div>");
