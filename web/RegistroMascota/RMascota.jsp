@@ -1,3 +1,4 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <html>
     <head>
         <title>REGISTRA A TU MASCOTA!</title>
@@ -15,7 +16,7 @@
            
                 if(dato === 'Perro')
                 {
-                    Pe=["Schnauzer","Pug","Chihuahua", "Salchicha", "Husky", "Bóxer", "Beagle"];
+                    Pe=["Schnauzer","Pug","Chihuahua", "Salchicha", "Husky", "BÃ³xer", "Beagle"];
                     var cuantos= Combo2.length;
                     var contador = 0;  
                     for(contador=1; contador<= cuantos; contador++)
@@ -30,7 +31,7 @@
                 }
                     if(dato === 'Gato')
                     {
-                        Ga=["Siámes", "Ragdoll", "Bengala", "Azul ruso", "Burmés", "Egipcio", "Korat"];
+                        Ga=["SiÃ¡mes", "Ragdoll", "Bengala", "Azul ruso", "BurmÃ©s", "Egipcio", "Korat"];
                         var cuantos= Combo2.length;
                         var contador = 0;
                         for(contador=1; contador<= cuantos; contador++)
@@ -45,7 +46,7 @@
 
                         if(dato === 'Pez')
                         {
-                            Pe=["Betta", "Tetra Neón", "Payaso", "Joya", "Ángel", "Limón", "Guppys"];
+                            Pe=["Betta", "Tetra NeÃ³n", "Payaso", "Joya", "Ãngel", "LimÃ³n", "Guppys"];
                             var cuantos= Combo2.length;
                             var contador = 0;
                             for(contador=1; contador<= cuantos; contador++)
@@ -59,7 +60,7 @@
                         }
                             if(dato === 'Conejo')
                             {
-                                Co=["Californiano", "Cabeza de León", "Mini Rex", "Mini Lop", "Holandes"];
+                                Co=["Californiano", "Cabeza de LeÃ³n", "Mini Rex", "Mini Lop", "Holandes"];
                                 var cuantos= Combo2.length;
                                 var contador = 0;
                                 for(contador=1; contador<= cuantos; contador++)
@@ -82,14 +83,14 @@
     </head>
     
     
-    <body onLoad="document.formulario.appat.focus();">
-        <form name="formulario"  method="post" action="../JPS/RegistroMascotas.jsp">
+    <body>
+        <form name=""  method="post" action="/RegistroMascota" enctype="multipart/form-data">
             <div class="dos" id="derechod">
                     
             </div>
                 <div class="uno" id="derecho"><center>
                         <p style="font-family:'Eras Bold ITC'; color: #ff6600; font-size: 3.5em;"> REGISTRA A TU MASCOTA! </p>
-                        <INPUT type="text" id="nommas" name="nommas" placeholder="Nombre de la mascota" style="width:250px; height:35px; font-size: 15px;" required="" maxlength="30">
+                        <input type="text" id="nommas" name="nommas" placeholder="Nombre de la mascota" style="width:250px; height:35px; font-size: 15px;" maxlength="30" />
                     <br><br>
                     <select id="Combo" onchange="Agregar()" name="Tipo">
                         <option value="op" selected>Selecciona alguna...</option>
@@ -102,23 +103,23 @@
                         <option value="op0" selected> Selecciona alguna raza...</option>
                     </select>
                     <br> <br>
-                    <INPUT type="text" id="edadmas" name="edadmas" onkeypress="numeros()" placeholder="Edad de la mascota" maxlength="3" style="width:250px; height:35px; font-size: 15px;"/>
+                    <input type="text" id="edadmas" name="edadmas" onkeypress="numeros()" placeholder="Edad de la mascota" maxlength="3" style="width:250px; height:35px; font-size: 15px;"/>
                     <br> <br>
                     
-                    <input id='Hombre' type="radio" name="sexo" value="Macho" ><label for="Macho" style="color: white">Macho</label><br>
-                    <input id='Mujer' type="radio" name="sexo" value="Hembra" ><label for="Hembra" style="color: white">Hembra</label><br><br>
+                    <input id='Hombre' type="radio" name="sexo" value="Macho" /><label for="Macho" style="color: white">Macho</label><br>
+                    <input id='Mujer' type="radio" name="sexo" value="Hembra" /><label for="Hembra" style="color: white">Hembra</label><br><br>
             
             
-                    <textarea name="Descripcion" placeholder="Realiza una breve descripción acerca de tu mascota."  maxlength="50"
-                              style="width: 400px; height: 150px" required></textarea>
+                    <textarea name="Descripcion" placeholder="Realiza una breve descripciÃ³n acerca de tu mascota."  maxlength="50"
+                              style="width: 400px; height: 150px" ></textarea>
                     <br> <br>
-                    <input type="file" name="Archivo">
+                    <input type="file" name="data" />
                     <p align="right">
-                        <INPUT type="submit" class="boton" name="bot" value="Registra" id="botreg" >
+                        <input type="submit" class="boton" value="Registra" id="botreg" />
                     </p>
                 </center></div>
                 <div class="dos" id="izquierdo">
-                    
+                    <img src="I:\Desktop\PetPe\build\web\data\1523939545741.jpg" width="500px" alt="MALDITASEA">
                 </div>
         </form>
     </body>
