@@ -21,7 +21,7 @@
            <nav>
               <ul>
                   <li> <a href="../PaginaPrincipal/index.html">Inicio</a></li>
-                  <li><a href="/JPS/RegistroMascotas.jsp">Registro</a></li>
+                  <li><a href="http://localhost:8084/RegistroMascota/RMascota.html">Registro</a></li>
               </ul> 
                <img id="logo" src="../Resourses/Images/logoPP.png" >
                <ul>
