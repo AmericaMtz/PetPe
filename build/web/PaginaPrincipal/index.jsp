@@ -49,7 +49,7 @@
                 </ul>
             </nav>  
         </header>
-        <a href="../empresa/sapphirus.html"><img class="logo" src="../Resourses/Images/logoPP.png" id="logo"></a>
+        <a href="../Empresa/Empresa.html"><img class="logo" src="../Resourses/Images/logoPP.png" id="logo"></a>
         <p class="tit">PetPetition</p>
         <div class="contel-all" id="carrucel">
             <div class="contel-carrusel">
