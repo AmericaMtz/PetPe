@@ -15,9 +15,12 @@
             }*/
         </script>
     </head>
+    
     <body>
+        <div>
         <!--<div class="inicio" id="negro">
             <input type="button" id="boton" value="INICIAR" onclick="oculta();"> -->
+        
         <header id="cabecera">
             <nav class="menu">
                 <ul>
@@ -65,5 +68,7 @@
                 <figure><img src="../Resourses/Images/img_carrucel/diez.jpg"></figure>
             </div>
         </div>
+        </div>
+        
     </body>
 </html>

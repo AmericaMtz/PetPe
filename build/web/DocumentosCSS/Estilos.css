@@ -100,3 +100,122 @@ select{
 }
 
 
+
+/*
+No si, llegue yo, la divaza xd
+*/
+
+#contenedorsito{
+  position:relative;
+  width:50%;
+  margin-top:0 ;
+  margin-left: 40%;
+}
+input[type="radio"]{
+  position:absolute;
+  right:1000%;
+}
+label{
+  float:left;
+  width:20px; 
+  height: 20px;
+  
+  margin:0 2.5%;
+  background:rgba(255,255,255, .8);
+  border-radius:100%;
+  cursor:pointer;
+}
+#slider{
+  position:absolute;
+  left:0%; top:0;
+  width:12px; height: 12px; 
+  margin:.4% 0 0 3%;
+  background: aqua;
+  transition:transform 1s;
+  border-radius:100%;
+  animation-timing-function: ease-in-out;
+  animation-duration:.3s;
+  animation-fill-mode: forwards;
+  transition: 0.2s top .05s ease-in-out;
+}
+#Macho:checked  ~ #slider{ animation-name: input1; top:0; }
+#Hembra:checked  ~ #slider{ animation-name: input2; top:14%; }
+
+
+@keyframes input1{ 70%, 30% { transform:scale(0.5); } }
+@keyframes input2{ 70%, 30% { transform:scale(0.5); } }
+
+
+
+
+#principal{
+   
+    
+}
+
+#contenedor_carga{
+    background-color: #333333;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    -webkit-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    transition: all 2s ease;
+    z-index: 10000;
+    display: flex;
+}
+#contereal{
+    
+
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    
+}
+#preloader_1{
+    position:relative;
+
+}
+#preloader_1 span{
+    display:block;
+    bottom:0px;
+    width: 20px;
+    height: 5px;
+    background:#9b59b6;
+    position:absolute;
+    -webkit-animation: preloader_1 1.5s  infinite ease-in-out;
+}
+ 
+#preloader_1 span:nth-child(2){
+left:30px;
+-webkit-animation-delay: .2s;
+ 
+}
+#preloader_1 span:nth-child(3){
+left:60px;
+-webkit-animation-delay: .4s;
+}
+#preloader_1 span:nth-child(4){
+left:90px;
+-webkit-animation-delay: .6s;
+}
+#preloader_1 span:nth-child(5){
+left:120px;
+-webkit-animation-delay: .8s;
+}
+@keyframes preloader_1 {
+    0% {height:5px;
+        -webkit-transform:translateY(0px);background:#9b59b6;}
+    25% {height:70px;
+         -webkit-transform:translateY(35px);background:#3498db;}
+    50% {height:5px;
+         -webkit-transform:translateY(0px);background:#9b59b6;}
+    100% {height:5px;
+          -webkit-transform:translateY(0px);background:#9b59b6;}
+} 
