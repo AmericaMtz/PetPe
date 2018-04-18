@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <LINK REL=StyleSheet HREF="../DocumentosCSS/Estilos.css" TYPE="text/css" MEDIA=screen>
-        <link rel="stylesheet" type="text/css" href="../DocumentosCSS/tcal.css" />
+        
         <script type="text/javascript" src="../JavaScript/tcal.js"></script> 
            
            <script >
@@ -84,6 +84,17 @@
     
     
     <body>
+        <div id="contenedor_carga"><div id="contereal">
+           <div id="preloader_1">
+                <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            </div>
+        </div>
+        <div id="principal" disabled="false">
         <form name=""  method="post" action="/RegistroMascota" enctype="multipart/form-data">
             <div class="dos" id="derechod">
                     
@@ -105,22 +116,50 @@
                     <br> <br>
                     <input type="text" id="edadmas" name="edadmas" onkeypress="numeros()" placeholder="Edad de la mascota" maxlength="3" style="width:250px; height:35px; font-size: 15px;"/>
                     <br> <br>
+                    </center>
                     
-                    <input id='Hombre' type="radio" name="sexo" value="Macho" /><label for="Macho" style="color: white">Macho</label><br>
-                    <input id='Mujer' type="radio" name="sexo" value="Hembra" /><label for="Hembra" style="color: white">Hembra</label><br><br>
+                    <div id="contenedorsito">
+                    
+                    <div id="radios">
+              <text style="color: white">Macho<label for="Macho"></label>
+              <input  id="Macho" name="radio" type="radio" value="Macho"/><br><br>
+              <text style="color: white">Hembra<label for="Hembra"></label>
+              <input  id="Hembra" name="radio" type="radio" value="Hembra"/>
+              
+              <span id="slider"></span>
+            </div>
             
-            
-                    <textarea name="Descripcion" placeholder="Realiza una breve descripciÃ³n acerca de tu mascota."  maxlength="50"
+                        <div>
+                    <textarea name="Descripcion" placeholder="Realiza una breve descripción acerca de tu mascota."  maxlength="50"
                               style="width: 400px; height: 150px" ></textarea>
+                              
                     <br> <br>
                     <input type="file" name="data" />
                     <p align="right">
                         <input type="submit" class="boton" value="Registra" id="botreg" />
                     </p>
-                </center></div>
+                
+</div></div>
                 <div class="dos" id="izquierdo">
                     <img src="I:\Desktop\PetPe\build\web\data\1523939545741.jpg" width="500px" alt="MALDITASEA">
                 </div>
+                    </div>    
         </form>
+        </div>
+            
+        <script>
+             var contenedor=document.getElementById('contenedor_carga');
+            window.onload=function(){
+               
+                contenedor.style.visivility='hidden';
+                
+
+                contenedor.style.opacity='0';
+            }
+            function uno(){
+                contenedor.remove();
+            }
+            setTimeout(uno, 1200);
+        </script>
     </body>
 </html>
