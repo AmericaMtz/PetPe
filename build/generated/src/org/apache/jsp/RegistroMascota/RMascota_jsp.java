@@ -128,13 +128,13 @@ public final class RMascota_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    \r\n");
       out.write("    <body>\r\n");
       out.write("        <div id=\"contenedor_carga\"><div id=\"contereal\">\r\n");
-      out.write("           <!-- <div id=\"preloader_1\">\r\n");
+      out.write("           <div id=\"preloader_1\">\r\n");
       out.write("                <span></span>\r\n");
       out.write("            <span></span>\r\n");
       out.write("            <span></span>\r\n");
       out.write("            <span></span>\r\n");
       out.write("            <span></span>\r\n");
-      out.write("            </div>-->\r\n");
+      out.write("            </div>\r\n");
       out.write("            </div>\r\n");
       out.write("        </div>\r\n");
       out.write("        <div id=\"principal\" disabled=\"false\">\r\n");
