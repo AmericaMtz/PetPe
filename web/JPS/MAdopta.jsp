@@ -9,6 +9,7 @@
 <html>
     <head>
         <title>ADOPTA</title>
+        <link rel="shortcut icon" type="image/png" href="../Resourses/Images/logoPP.png"/>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../DocumentosCSS/MAdopta.css">
@@ -20,7 +21,7 @@
        <header>
            <nav>
               <ul>
-                  <li> <a href="../PaginaPrincipal/index.html">Inicio</a></li>
+                  <li> <a href="../PaginaPrincipal/index.jsp">Inicio</a></li>
                   <li><a href="../RegistroMascota/RMascota.jsp">Registro</a></li>
               </ul> 
                <img id="logo" src="../Resourses/Images/logoPP.png" >
@@ -42,7 +43,7 @@
               out.println("<a href='#openModal'> <figure><img src='../data/"+mascota.getImagen()+"'></figure> </a>");
                 out.println("<div id='openModal' class='algo'>");
               out.println("<div>");
-                      out.println("<a href='#close' title='Close' class='close' onclick='close();'><div style='float: left'></div><div class='tache'><img src='../Resourses/Images/close.svg' width=3 height=2></div></a>"); 
+                      out.println("<a href='#close' title='Close' class='close' onclick='close();'><div style='float: left'></div><div class='tache'><img src='../Resourses/Images/close.svg' width=30 height=20></div></a>"); 
                     out.println("<div class='title'> ");
                         out.println("<h1><b>"+mascota.getNombre()+"</b></h1></div>");
                         out.println("<br>");

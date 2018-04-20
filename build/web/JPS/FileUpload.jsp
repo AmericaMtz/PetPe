@@ -10,6 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>EJEMPLO SUBIDA DE ARCHIVO</title>
+        <link rel="shortcut icon" type="image/png" href="../Resourses/Images/logoPP.png"/>
     </head>
     <body>
         <form method="POST" action="/FileUpload" enctype="multipart/form-data">

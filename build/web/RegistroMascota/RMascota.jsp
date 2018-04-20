@@ -1,11 +1,13 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <html>
     <head>
-        <title>REGISTRA A TU MASCOTA!</title>
+        <title>REGISTRA A TU MASCOTA!
+        </title>
+        <link rel="shortcut icon" type="image/png" href="../Resourses/Images/logoPP.png"/>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <LINK REL=StyleSheet HREF="../DocumentosCSS/Estilos.css" TYPE="text/css" MEDIA=screen>
-        <link rel="stylesheet" type="text/css" href="../DocumentosCSS/tcal.css" />
+        <LINK REL=StyleSheet HREF="../DocumentosCSS/Estilos1.css" TYPE="text/css" MEDIA=screen>
+        
         <script type="text/javascript" src="../JavaScript/tcal.js"></script> 
            
            <script >
@@ -83,13 +85,24 @@
     </head>
     
     
-    <body>
+            <body>
+                
+                <div id="contenedor_carga"><div id="contereal">
+            <div id="preloader_1">
+                <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            </div>
+                </div>
         <form name=""  method="post" action="/RegistroMascota" enctype="multipart/form-data">
             <div class="dos" id="derechod">
                     
             </div>
                 <div class="uno" id="derecho"><center>
-                        <p style="font-family:'Eras Bold ITC'; color: #ff6600; font-size: 3.5em;"> REGISTRA A TU MASCOTA! </p>
+                        <p  style="font-family:'Eras Bold ITC'; color: #ff6600; font-size: 3.5em;"> REGISTRA A TU MASCOTA! </p>
                         <input type="text" id="nommas" name="nommas" placeholder="Nombre de la mascota" style="width:250px; height:35px; font-size: 15px;" maxlength="30" />
                     <br><br>
                     <select id="Combo" onchange="Agregar()" name="Tipo">
@@ -105,22 +118,42 @@
                     <br> <br>
                     <input type="text" id="edadmas" name="edadmas" onkeypress="numeros()" placeholder="Edad de la mascota" maxlength="3" style="width:250px; height:35px; font-size: 15px;"/>
                     <br> <br>
-                    
-                    <input id='Hombre' type="radio" name="sexo" value="Macho" /><label for="Macho" style="color: white">Macho</label><br>
-                    <input id='Mujer' type="radio" name="sexo" value="Hembra" /><label for="Hembra" style="color: white">Hembra</label><br><br>
-            
-            
-                    <textarea name="Descripcion" placeholder="Realiza una breve descripciÃ³n acerca de tu mascota."  maxlength="50"
+                    </center>
+                    <div id="radios">
+              <label for="Macho"></label>
+              <input  id="Macho" name="radio" type="radio" value="Macho"/>Macho<br><br>
+              <label for="Hembra"></label>
+              <input  id="Hembra" name="radio" type="radio" value="Hembra"/>Hembra<br>
+              
+              
+              <span id="slider"></span>
+            </div>
+                    <center><div>
+                    <textarea name="Descripcion" placeholder="Realiza una breve descripción acerca de tu mascota."  maxlength="50"
                               style="width: 400px; height: 150px" ></textarea>
                     <br> <br>
+                    
+                    
                     <input type="file" name="data" />
                     <p align="right">
                         <input type="submit" class="boton" value="Registra" id="botreg" />
                     </p>
-                </center></div>
-                <div class="dos" id="izquierdo">
-                    <img src="I:\Desktop\PetPe\build\web\data\1523939545741.jpg" width="500px" alt="MALDITASEA">
-                </div>
+                        </div></center>
+                    </div>
+                
+                
         </form>
+                <script>
+            var contenedor=document.getElementById('contenedor_carga');
+            window.onload=function(){
+                contenedor.style.visivility='hidden';
+                contenedor.style.opacity='0';
+                setTimeout(uno,1200);
+            }
+            function uno(){
+                contenedor.style.display='none';
+            }
+            
+        </script>
     </body>
 </html>

@@ -4,6 +4,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <LINK REL=StyleSheet HREF="../DocumentosCSS/Estilos.css" TYPE="text/css" MEDIA=screen> 
         <title>DATOS</title>
+        <link rel="shortcut icon" type="image/png" href="../Resourses/Images/logoPP.png"/>
     </head>
     <body>
         <%

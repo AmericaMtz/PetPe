@@ -5,6 +5,7 @@
 <html>
     <head>
         <title>REGISTRO</title>
+        <link rel="shortcut icon" type="image/png" href="../Resourses/Images/logoPP.png"/>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <LINK REL=StyleSheet HREF="../DocumentosCSS/Estilos.css" TYPE="text/css" MEDIA=screen>

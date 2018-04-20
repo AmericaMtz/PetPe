@@ -162,7 +162,12 @@ img#logo{
     position: absolute;
     -webkit-box-orient: horizontal;
 }
-
+a.close{
+    width: 10%;
+    heigth:10%;
+    margin:0;
+    padding: 0;
+}
 #conteframe img{
     width: 17.6vw;
     height: 47vh;

@@ -48,7 +48,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <title>Pet Petition</title>\r\n");
       out.write("        <meta charset=\"UTF-8\">\r\n");
       out.write("        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n");
-      out.write("        <link rel=\"stylesheet\" type=\"text/css\" href=\"../DocumentosCSS/EstilosPaginaPrincipal.css\">\r\n");
+      out.write("        <link rel=\"stylesheet\" type=\"text/css\" href=\"../DocumentosCSS/EstilosPaginaPrincipal1.css\">\r\n");
       out.write("        <script>\r\n");
       out.write("            /*function oculta(){\r\n");
       out.write("                for (i = 10; i >= 0; i--){\r\n");
@@ -61,7 +61,17 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    <body>\r\n");
       out.write("        <!--<div class=\"inicio\" id=\"negro\">\r\n");
       out.write("            <input type=\"button\" id=\"boton\" value=\"INICIAR\" onclick=\"oculta();\"> -->\r\n");
-      out.write("        <header id=\"cabecera\">\r\n");
+      out.write("        <div id=\"contenedor_carga\"><div id=\"contereal\">\r\n");
+      out.write("            <div id=\"preloader_1\">\r\n");
+      out.write("                <span></span>\r\n");
+      out.write("            <span></span>\r\n");
+      out.write("            <span></span>\r\n");
+      out.write("            <span></span>\r\n");
+      out.write("            <span></span>\r\n");
+      out.write("            </div>\r\n");
+      out.write("            </div>\r\n");
+      out.write("        </div>\r\n");
+      out.write("        <div><header id=\"cabecera\">\r\n");
       out.write("            <nav class=\"menu\">\r\n");
       out.write("                <ul>\r\n");
       out.write("                    <li>ADOPCION\r\n");
@@ -92,7 +102,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                </ul>\r\n");
       out.write("            </nav>  \r\n");
       out.write("        </header>\r\n");
-      out.write("        <a href=\"../empresa/sapphirus.html\"><img class=\"logo\" src=\"../Resourses/Images/logoPP.png\" id=\"logo\"></a>\r\n");
+      out.write("        <a href=\"../Empresa/Empresa.html\"><img class=\"logo\" src=\"../Resourses/Images/logoPP.png\" id=\"logo\"></a>\r\n");
       out.write("        <p class=\"tit\">PetPetition</p>\r\n");
       out.write("        <div class=\"contel-all\" id=\"carrucel\">\r\n");
       out.write("            <div class=\"contel-carrusel\">\r\n");
@@ -108,6 +118,19 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                <figure><img src=\"../Resourses/Images/img_carrucel/diez.jpg\"></figure>\r\n");
       out.write("            </div>\r\n");
       out.write("        </div>\r\n");
+      out.write("        </div>\r\n");
+      out.write("        <script>\r\n");
+      out.write("            var contenedor=document.getElementById('contenedor_carga');\r\n");
+      out.write("            window.onload=function(){\r\n");
+      out.write("                contenedor.style.visivility='hidden';\r\n");
+      out.write("                contenedor.style.opacity='0';\r\n");
+      out.write("                setTimeout(uno,1000);\r\n");
+      out.write("            }\r\n");
+      out.write("            function uno(){\r\n");
+      out.write("                contenedor.style.display='none';\r\n");
+      out.write("            }\r\n");
+      out.write("            \r\n");
+      out.write("        </script>\r\n");
       out.write("    </body>\r\n");
       out.write("</html>\r\n");
     } catch (Throwable t) {

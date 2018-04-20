@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>BUSCA SERVICIO</title>
+        <link rel="shortcut icon" type="image/png" href="../Resourses/Images/logoPP.png"/>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../DocumentosCSS/BusServicio.css">
@@ -9,6 +10,16 @@
         <script src="../JavaScript/MAdopta.js"></script>
     </head>
     <body>
+        <div id="contenedor_carga"><div id="contereal">
+            <div id="preloader_1">
+                <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            </div>
+                </div>
        <header>
            <nav>
                <ul>
@@ -33,5 +44,17 @@
             <div class="cuatro">Venta de accesorios</div>
             <div class="cinco">Estetica canina</div>
         </div>
+        <script>
+            var contenedor=document.getElementById('contenedor_carga');
+            window.onload=function(){
+                contenedor.style.visivility='hidden';
+                contenedor.style.opacity='0';
+                setTimeout(uno,1200);
+            }
+            function uno(){
+                contenedor.style.display='none';
+            }
+            
+        </script>
     </body>
 </html>

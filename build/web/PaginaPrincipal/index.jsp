@@ -3,9 +3,10 @@
 <html>
     <head>
         <title>Pet Petition</title>
+        <link rel="shortcut icon" type="image/png" href="../Resourses/Images/logoPP.png"/>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="../DocumentosCSS/EstilosPaginaPrincipal.css">
+        <link rel="stylesheet" type="text/css" href="../DocumentosCSS/EstilosPaginaPrincipal1.css">
         <script>
             /*function oculta(){
                 for (i = 10; i >= 0; i--){
@@ -18,8 +19,16 @@
     <body>
         <!--<div class="inicio" id="negro">
             <input type="button" id="boton" value="INICIAR" onclick="oculta();"> -->
-        <header id="cabecera">
-            <nav class="menu">
+        <div id="contenedor_carga">
+            <div id="contereal">
+            <div id="preloader_1">
+                <img src="../Resourses/Images/logoPP.png" id="loguito">
+            </div>
+            </div>
+        </div>
+        <div>
+            <div id="cabecera">
+            <div id="menu">
                 <ul>
                     <li>ADOPCION
                         <ul>
@@ -47,9 +56,9 @@
                     <li><a href="../Quejas/Quejas.html">CONTACTANOS</a></li>
                     <li><a href="../AmigoIdeal/Ideal.html">MASCOTA IDEAL</a></li>
                 </ul>
-            </nav>  
-        </header>
-        <a href="../empresa/sapphirus.html"><img class="logo" src="../Resourses/Images/logoPP.png" id="logo"></a>
+            </div>  
+        </div>
+        <a href="../Empresa/Empresa.html"><img class="logo" src="../Resourses/Images/logoPP.png" id="logo"></a>
         <p class="tit">PetPetition</p>
         <div class="contel-all" id="carrucel">
             <div class="contel-carrusel">
@@ -65,5 +74,18 @@
                 <figure><img src="../Resourses/Images/img_carrucel/diez.jpg"></figure>
             </div>
         </div>
+        </div>
+        <script>
+            var contenedor=document.getElementById('contenedor_carga');
+            window.onload=function(){
+                contenedor.style.visivility='hidden';
+                contenedor.style.opacity='0';
+                setTimeout(uno,1400);
+            }
+            function uno(){
+                contenedor.style.display='none';
+            }
+            
+        </script>
     </body>
 </html>

@@ -11,6 +11,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title></title>
+        <link rel="shortcut icon" type="image/png" href="../Resourses/Images/logoPP.png"/>
     </head>
     <body>
         <%

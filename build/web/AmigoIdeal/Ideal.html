@@ -2,15 +2,25 @@
 <html>
     <head>
         <title>Menu</title>
+                <link rel="shortcut icon" type="image/png" href="../Resourses/Images/logoPP.png"/>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../DocumentosCSS/Ideal.css">
     </head>
-    <body>
-        <center><p class="titulo">Mi mascota ideal es...</p></center>
+    <body><div id="contenedor_carga"><div id="contereal">
+            <div id="preloader_1">
+                <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            </div>
+                </div>
+        <center><H1 class="titulo">Mi mascota ideal es...</H1></center>
         <header>
             <div class="contenedor" id="uno"><img src="../Resourses/Images/casa.png" id="h">
-                <p class="texto"><a href="../PaginaPrincipal/index.html">Home</a></p></div>
+                <p class="texto"><a href="../PaginaPrincipal/index.jsp">Home</a></p></div>
                 <div class="contenedor" id="dos"><img src="../Resourses/Images/perra.png" id="h">
                     <p class="texto"><a href="Catalogo/Perros/Perros.html">Perros</a></p></div>
                     <div class="contenedor" id="tres"><img src="../Resourses/Images/gato_1.png" id="h">
@@ -22,5 +32,17 @@
                                 <div class="contenedor" id="seis"><img src="../Resourses/Images/otros.png" id="h" >
                                     <p class="texto"><a href="Catalogo/Otros/Otros.html">Otros</a></p></div>
         </header>
+        <script>
+            var contenedor=document.getElementById('contenedor_carga');
+            window.onload=function(){
+                contenedor.style.visivility='hidden';
+                contenedor.style.opacity='0';
+                setTimeout(uno,1200);
+            }
+            function uno(){
+                contenedor.style.display='none';
+            }
+            
+        </script>
     </body>
 </html>
