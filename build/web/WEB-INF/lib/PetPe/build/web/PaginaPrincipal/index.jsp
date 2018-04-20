@@ -15,12 +15,18 @@
             }*/
         </script>
     </head>
+<<<<<<< HEAD
     
     <body>
         <div>
         <!--<div class="inicio" id="negro">
             <input type="button" id="boton" value="INICIAR" onclick="oculta();"> -->
         
+=======
+    <body>
+        <!--<div class="inicio" id="negro">
+            <input type="button" id="boton" value="INICIAR" onclick="oculta();"> -->
+>>>>>>> aa26903cb0a31f547eb04724f78da0836ad6282d
         <header id="cabecera">
             <nav class="menu">
                 <ul>
@@ -52,7 +58,11 @@
                 </ul>
             </nav>  
         </header>
+<<<<<<< HEAD
         <a href="../empresa/sapphirus.html"><img class="logo" src="../Resourses/Images/logoPP.png" id="logo"></a>
+=======
+        <a href="../Empresa/Empresa.html"><img class="logo" src="../Resourses/Images/logoPP.png" id="logo"></a>
+>>>>>>> aa26903cb0a31f547eb04724f78da0836ad6282d
         <p class="tit">PetPetition</p>
         <div class="contel-all" id="carrucel">
             <div class="contel-carrusel">
@@ -68,7 +78,10 @@
                 <figure><img src="../Resourses/Images/img_carrucel/diez.jpg"></figure>
             </div>
         </div>
+<<<<<<< HEAD
         </div>
         
+=======
+>>>>>>> aa26903cb0a31f547eb04724f78da0836ad6282d
     </body>
 </html>

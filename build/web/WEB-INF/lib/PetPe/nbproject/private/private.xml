@@ -3,12 +3,18 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/F:/pp/PetPe/web/MOfrece/Ofrece.html</file>
             <file>file:/F:/pp/PetPe/web/DocumentosCSS/Estilos.css</file>
             <file>file:/F:/pp/PetPe/web/DocumentosCSS/EstilosPaginaPrincipal.css</file>
             <file>file:/F:/pp/PetPe/web/RegistroMascota/RMascota.jsp</file>
             <file>file:/F:/pp/PetPe/web/JPS/RegistroMascotas.jsp</file>
             <file>file:/F:/pp/PetPe/web/PaginaPrincipal/index.jsp</file>
+=======
+            <file>file:/F:/pp/PetPe/web/MenuAdopta/MAdopta.html</file>
+            <file>file:/F:/pp/PetPe/web/JPS/RegistroMascotas.jsp</file>
+            <file>file:/F:/pp/PetPe/web/JPS/MAdopta.jsp</file>
+>>>>>>> aa26903cb0a31f547eb04724f78da0836ad6282d
         </group>
     </open-files>
 </project-private>

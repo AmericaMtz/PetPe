@@ -58,9 +58,12 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            }*/\r\n");
       out.write("        </script>\r\n");
       out.write("    </head>\r\n");
+      out.write("    \r\n");
       out.write("    <body>\r\n");
+      out.write("        \r\n");
       out.write("        <!--<div class=\"inicio\" id=\"negro\">\r\n");
       out.write("            <input type=\"button\" id=\"boton\" value=\"INICIAR\" onclick=\"oculta();\"> -->\r\n");
+<<<<<<< HEAD
       out.write("        <div id=\"contenedor_carga\"><div id=\"contereal\">\r\n");
       out.write("            <div id=\"preloader_1\">\r\n");
       out.write("                <span></span>\r\n");
@@ -72,6 +75,10 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            </div>\r\n");
       out.write("        </div>\r\n");
       out.write("        <div><header id=\"cabecera\">\r\n");
+=======
+      out.write("        \r\n");
+      out.write("        <header id=\"cabecera\">\r\n");
+>>>>>>> aa26903cb0a31f547eb04724f78da0836ad6282d
       out.write("            <nav class=\"menu\">\r\n");
       out.write("                <ul>\r\n");
       out.write("                    <li>ADOPCION\r\n");
@@ -118,6 +125,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                <figure><img src=\"../Resourses/Images/img_carrucel/diez.jpg\"></figure>\r\n");
       out.write("            </div>\r\n");
       out.write("        </div>\r\n");
+<<<<<<< HEAD
       out.write("        </div>\r\n");
       out.write("        <script>\r\n");
       out.write("            var contenedor=document.getElementById('contenedor_carga');\r\n");
@@ -131,6 +139,10 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            }\r\n");
       out.write("            \r\n");
       out.write("        </script>\r\n");
+=======
+      out.write("        \r\n");
+      out.write("        \r\n");
+>>>>>>> aa26903cb0a31f547eb04724f78da0836ad6282d
       out.write("    </body>\r\n");
       out.write("</html>\r\n");
     } catch (Throwable t) {

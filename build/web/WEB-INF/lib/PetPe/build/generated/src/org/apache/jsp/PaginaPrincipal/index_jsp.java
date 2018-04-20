@@ -58,12 +58,18 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            }*/\r\n");
       out.write("        </script>\r\n");
       out.write("    </head>\r\n");
+<<<<<<< HEAD
       out.write("    \r\n");
       out.write("    <body>\r\n");
       out.write("        <div>\r\n");
       out.write("        <!--<div class=\"inicio\" id=\"negro\">\r\n");
       out.write("            <input type=\"button\" id=\"boton\" value=\"INICIAR\" onclick=\"oculta();\"> -->\r\n");
       out.write("        \r\n");
+=======
+      out.write("    <body>\r\n");
+      out.write("        <!--<div class=\"inicio\" id=\"negro\">\r\n");
+      out.write("            <input type=\"button\" id=\"boton\" value=\"INICIAR\" onclick=\"oculta();\"> -->\r\n");
+>>>>>>> aa26903cb0a31f547eb04724f78da0836ad6282d
       out.write("        <header id=\"cabecera\">\r\n");
       out.write("            <nav class=\"menu\">\r\n");
       out.write("                <ul>\r\n");
@@ -111,8 +117,11 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                <figure><img src=\"../Resourses/Images/img_carrucel/diez.jpg\"></figure>\r\n");
       out.write("            </div>\r\n");
       out.write("        </div>\r\n");
+<<<<<<< HEAD
       out.write("        </div>\r\n");
       out.write("        \r\n");
+=======
+>>>>>>> aa26903cb0a31f547eb04724f78da0836ad6282d
       out.write("    </body>\r\n");
       out.write("</html>\r\n");
     } catch (Throwable t) {

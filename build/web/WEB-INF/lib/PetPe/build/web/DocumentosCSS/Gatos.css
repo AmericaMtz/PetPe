@@ -246,7 +246,11 @@ div.contenedor:hover #h{
     pointer-events: auto;
 }
 .algo>div{
+<<<<<<< HEAD
     
+=======
+   
+>>>>>>> aa26903cb0a31f547eb04724f78da0836ad6282d
     width: 50%;
     position: relative;
     margin: 10% auto;

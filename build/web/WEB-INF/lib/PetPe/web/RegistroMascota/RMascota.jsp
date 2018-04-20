@@ -5,7 +5,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <LINK REL=StyleSheet HREF="../DocumentosCSS/Estilos.css" TYPE="text/css" MEDIA=screen>
+<<<<<<< HEAD
         
+=======
+        <link rel="stylesheet" type="text/css" href="../DocumentosCSS/tcal.css" />
+>>>>>>> aa26903cb0a31f547eb04724f78da0836ad6282d
         <script type="text/javascript" src="../JavaScript/tcal.js"></script> 
            
            <script >
@@ -84,6 +88,7 @@
     
     
     <body>
+<<<<<<< HEAD
         <div id="contenedor_carga"><div id="contereal">
            <div id="preloader_1">
                 <span></span>
@@ -95,6 +100,8 @@
             </div>
         </div>
         <div id="principal" disabled="false">
+=======
+>>>>>>> aa26903cb0a31f547eb04724f78da0836ad6282d
         <form name=""  method="post" action="/RegistroMascota" enctype="multipart/form-data">
             <div class="dos" id="derechod">
                     
@@ -116,6 +123,7 @@
                     <br> <br>
                     <input type="text" id="edadmas" name="edadmas" onkeypress="numeros()" placeholder="Edad de la mascota" maxlength="3" style="width:250px; height:35px; font-size: 15px;"/>
                     <br> <br>
+<<<<<<< HEAD
                     </center>
                     
                     <div id="contenedorsito">
@@ -133,11 +141,21 @@
                     <textarea name="Descripcion" placeholder="Realiza una breve descripción acerca de tu mascota."  maxlength="50"
                               style="width: 400px; height: 150px" ></textarea>
                               
+=======
+                    
+                    <input id='Hombre' type="radio" name="sexo" value="Macho" /><label for="Macho" style="color: white">Macho</label><br>
+                    <input id='Mujer' type="radio" name="sexo" value="Hembra" /><label for="Hembra" style="color: white">Hembra</label><br><br>
+            
+            
+                    <textarea name="Descripcion" placeholder="Realiza una breve descripciÃ³n acerca de tu mascota."  maxlength="50"
+                              style="width: 400px; height: 150px" ></textarea>
+>>>>>>> aa26903cb0a31f547eb04724f78da0836ad6282d
                     <br> <br>
                     <input type="file" name="data" />
                     <p align="right">
                         <input type="submit" class="boton" value="Registra" id="botreg" />
                     </p>
+<<<<<<< HEAD
                 
 </div></div>
                 <div class="dos" id="izquierdo">
@@ -161,5 +179,12 @@
             }
             setTimeout(uno, 1200);
         </script>
+=======
+                </center></div>
+                <div class="dos" id="izquierdo">
+                    <img src="I:\Desktop\PetPe\build\web\data\1523939545741.jpg" width="500px" alt="MALDITASEA">
+                </div>
+        </form>
+>>>>>>> aa26903cb0a31f547eb04724f78da0836ad6282d
     </body>
 </html>

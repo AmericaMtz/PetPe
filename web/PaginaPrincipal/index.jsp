@@ -16,9 +16,12 @@
             }*/
         </script>
     </head>
+    
     <body>
+        
         <!--<div class="inicio" id="negro">
             <input type="button" id="boton" value="INICIAR" onclick="oculta();"> -->
+<<<<<<< HEAD
         <div id="contenedor_carga">
             <div id="contereal">
             <div id="preloader_1">
@@ -29,6 +32,11 @@
         <div>
             <div id="cabecera">
             <div id="menu">
+=======
+        
+        <header id="cabecera">
+            <nav class="menu">
+>>>>>>> aa26903cb0a31f547eb04724f78da0836ad6282d
                 <ul>
                     <li>ADOPCION
                         <ul>
@@ -56,8 +64,13 @@
                     <li><a href="../Quejas/Quejas.html">CONTACTANOS</a></li>
                     <li><a href="../AmigoIdeal/Ideal.html">MASCOTA IDEAL</a></li>
                 </ul>
+<<<<<<< HEAD
             </div>  
         </div>
+=======
+            </nav>  
+        </header>
+>>>>>>> aa26903cb0a31f547eb04724f78da0836ad6282d
         <a href="../Empresa/Empresa.html"><img class="logo" src="../Resourses/Images/logoPP.png" id="logo"></a>
         <p class="tit">PetPetition</p>
         <div class="contel-all" id="carrucel">
@@ -74,6 +87,7 @@
                 <figure><img src="../Resourses/Images/img_carrucel/diez.jpg"></figure>
             </div>
         </div>
+<<<<<<< HEAD
         </div>
         <script>
             var contenedor=document.getElementById('contenedor_carga');
@@ -87,5 +101,9 @@
             }
             
         </script>
+=======
+        
+        
+>>>>>>> aa26903cb0a31f547eb04724f78da0836ad6282d
     </body>
 </html>

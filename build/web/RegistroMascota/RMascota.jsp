@@ -6,7 +6,11 @@
         <link rel="shortcut icon" type="image/png" href="../Resourses/Images/logoPP.png"/>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
         <LINK REL=StyleSheet HREF="../DocumentosCSS/Estilos1.css" TYPE="text/css" MEDIA=screen>
+=======
+        <LINK REL=StyleSheet HREF="../DocumentosCSS/Estilos.css" TYPE="text/css" MEDIA=screen>
+>>>>>>> aa26903cb0a31f547eb04724f78da0836ad6282d
         
         <script type="text/javascript" src="../JavaScript/tcal.js"></script> 
            
@@ -85,10 +89,16 @@
     </head>
     
     
+<<<<<<< HEAD
             <body>
                 
                 <div id="contenedor_carga"><div id="contereal">
             <div id="preloader_1">
+=======
+    <body>
+        <div id="contenedor_carga"><div id="contereal">
+           <div id="preloader_1">
+>>>>>>> aa26903cb0a31f547eb04724f78da0836ad6282d
                 <span></span>
             <span></span>
             <span></span>
@@ -96,7 +106,12 @@
             <span></span>
             </div>
             </div>
+<<<<<<< HEAD
                 </div>
+=======
+        </div>
+        <div id="principal" disabled="false">
+>>>>>>> aa26903cb0a31f547eb04724f78da0836ad6282d
         <form name=""  method="post" action="/RegistroMascota" enctype="multipart/form-data">
             <div class="dos" id="derechod">
                     
@@ -119,6 +134,7 @@
                     <input type="text" id="edadmas" name="edadmas" onkeypress="numeros()" placeholder="Edad de la mascota" maxlength="3" style="width:250px; height:35px; font-size: 15px;"/>
                     <br> <br>
                     </center>
+<<<<<<< HEAD
                     <div id="radios">
               <label for="Macho"></label>
               <input  id="Macho" name="radio" type="radio" value="Macho"/>Macho<br><br>
@@ -129,8 +145,24 @@
               <span id="slider"></span>
             </div>
                     <center><div>
+=======
+                    
+                    <div id="contenedorsito">
+                    
+                    <div id="radios">
+              <text style="color: white">Macho<label for="Macho"></label>
+              <input  id="Macho" name="radio" type="radio" value="Macho"/><br><br>
+              <text style="color: white">Hembra<label for="Hembra"></label>
+              <input  id="Hembra" name="radio" type="radio" value="Hembra"/>
+              
+              <span id="slider"></span>
+            </div>
+            
+                        <div>
+>>>>>>> aa26903cb0a31f547eb04724f78da0836ad6282d
                     <textarea name="Descripcion" placeholder="Realiza una breve descripción acerca de tu mascota."  maxlength="50"
                               style="width: 400px; height: 150px" ></textarea>
+                              
                     <br> <br>
                     
                     
@@ -138,6 +170,7 @@
                     <p align="right">
                         <input type="submit" class="boton" value="Registra" id="botreg" />
                     </p>
+<<<<<<< HEAD
                         </div></center>
                     </div>
                 
@@ -154,6 +187,30 @@
                 contenedor.style.display='none';
             }
             
+=======
+                
+</div></div>
+                <div class="dos" id="izquierdo">
+                    <img src="I:\Desktop\PetPe\build\web\data\1523939545741.jpg" width="500px" alt="MALDITASEA">
+                </div>
+                    </div>    
+        </form>
+        </div>
+            
+        <script>
+             var contenedor=document.getElementById('contenedor_carga');
+            window.onload=function(){
+               
+                contenedor.style.visivility='hidden';
+                
+
+                contenedor.style.opacity='0';
+            }
+            function uno(){
+                contenedor.remove();
+            }
+            setTimeout(uno, 1200);
+>>>>>>> aa26903cb0a31f547eb04724f78da0836ad6282d
         </script>
     </body>
 </html>

@@ -14,6 +14,10 @@
     </head>
     <body>
         <%
+<<<<<<< HEAD
+=======
+            //pues es la pagina de donde tienen que salir las imagenes de los animales
+>>>>>>> aa26903cb0a31f547eb04724f78da0836ad6282d
             String nom = (request.getParameter("nommas")).toUpperCase();
             String tip = (request.getParameter("Tipo")).toUpperCase();
             String raza = (request.getParameter("Raza")).toUpperCase();
@@ -56,8 +60,13 @@
                     ps.setString(4, idraz);//raza
                     
                     ps.setString(5, edad);//edas
+<<<<<<< HEAD
                     ps.setString(6, desc);//colonia
                     ps.setString(7, col);//descripcion
+=======
+                    ps.setString(6, desc);//descripcion
+                    ps.setString(7, col);//colonia
+>>>>>>> aa26903cb0a31f547eb04724f78da0836ad6282d
                     ps.setString(8, img);//imagen
 
                     ps.registerOutParameter(9, Types.INTEGER);
@@ -74,7 +83,11 @@
                             out.print("<script> alert('Mascota ya existe'); </script>");
                            
                         }
+<<<<<<< HEAD
                      out.print("<META HTTP-EQUIV='REFRESH' CONTENT='0.00000001;URL=http://localhost:8080/PetPe/JPS/MAdopta.jsp'>");
+=======
+                     out.print("<META HTTP-EQUIV='REFRESH' CONTENT='0.00000001;URL=http://localhost:8084/MAdopta?#close'>");
+>>>>>>> aa26903cb0a31f547eb04724f78da0836ad6282d
                 }catch(SQLException error) {
                     out.print(error.toString());
                 }

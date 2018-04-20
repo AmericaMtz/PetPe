@@ -20,7 +20,11 @@
        <header>
            <nav>
               <ul>
+<<<<<<< HEAD
                   <li> <a href="../PaginaPrincipal/index.html">Inicio</a></li>
+=======
+                  <li> <a href="../PaginaPrincipal/index.jsp">Inicio</a></li>
+>>>>>>> aa26903cb0a31f547eb04724f78da0836ad6282d
                   <li><a href="../RegistroMascota/RMascota.jsp">Registro</a></li>
               </ul> 
                <img id="logo" src="../Resourses/Images/logoPP.png" >
@@ -42,7 +46,11 @@
               out.println("<a href='#openModal'> <figure><img src='../data/"+mascota.getImagen()+"'></figure> </a>");
                 out.println("<div id='openModal' class='algo'>");
               out.println("<div>");
+<<<<<<< HEAD
                       out.println("<a href='#close' title='Close' class='close' onclick='close();'><div style='float: left'></div><div class='tache'><img src='../Resourses/Images/close.svg' width=3 height=2></div></a>"); 
+=======
+                      out.println("<a href='#close' title='Close' class='close' onclick='close();'><div style='float: left'></div><div class='tache'><img src='../Resourses/Images/close.svg' width=30 height=20></div></a>"); 
+>>>>>>> aa26903cb0a31f547eb04724f78da0836ad6282d
                     out.println("<div class='title'> ");
                         out.println("<h1><b>"+mascota.getNombre()+"</b></h1></div>");
                         out.println("<br>");
@@ -56,6 +64,7 @@
                   out.println("</div>");
               out.println("</div>");  
             }
+<<<<<<< HEAD
             /*out.println("<a href='#openModal'> <figure><img src='../Resourses/Images/animalesAdopta/schnauzer.jpg'></figure> </a>");
                 out.println("<div id='openModal' class='algo'>");
               out.println("<div>");
@@ -174,6 +183,9 @@
             out.println("<figure><img src='../Resourses/Images/animalesAdopta/7.jpg'></figure>");
             out.println("<figure><img src='../Resourses/Images/animalesAdopta/8.jpg'></figure>");
             out.println("<figure><img src='../Resourses/Images/animalesAdopta/9.jpg'></figure>"); */
+=======
+           
+>>>>>>> aa26903cb0a31f547eb04724f78da0836ad6282d
             
         out.println("</div>");
         %>

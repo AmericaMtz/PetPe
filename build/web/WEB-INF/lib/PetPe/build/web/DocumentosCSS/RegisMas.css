@@ -66,6 +66,7 @@ div {
     background: crimson;
 }
 
+<<<<<<< HEAD
 
 
 /*
@@ -105,3 +106,5 @@ label{
 
 @keyframes input1{ 70%, 30% { transform:scale(0.5); } }
 @keyframes input2{ 70%, 30% { transform:scale(0.5); } }
+=======
+>>>>>>> aa26903cb0a31f547eb04724f78da0836ad6282d

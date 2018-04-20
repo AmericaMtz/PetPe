@@ -44,11 +44,18 @@ public final class RMascota_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\r\n");
       out.write("<html>\r\n");
       out.write("    <head>\r\n");
+<<<<<<< HEAD
       out.write("        <title>REGISTRA A TU MASCOTA!\r\n");
       out.write("        <link rel=\"shortcut icon\" type=\"image/png\" href=\"../Resourses/Images/carita.png\"/></title>\r\n");
       out.write("        <meta charset=\"UTF-8\">\r\n");
       out.write("        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n");
       out.write("        <LINK REL=StyleSheet HREF=\"../DocumentosCSS/Estilos1.css\" TYPE=\"text/css\" MEDIA=screen>\r\n");
+=======
+      out.write("        <title>REGISTRA A TU MASCOTA!</title>\r\n");
+      out.write("        <meta charset=\"UTF-8\">\r\n");
+      out.write("        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n");
+      out.write("        <LINK REL=StyleSheet HREF=\"../DocumentosCSS/Estilos.css\" TYPE=\"text/css\" MEDIA=screen>\r\n");
+>>>>>>> aa26903cb0a31f547eb04724f78da0836ad6282d
       out.write("        \r\n");
       out.write("        <script type=\"text/javascript\" src=\"../JavaScript/tcal.js\"></script> \r\n");
       out.write("           \r\n");
@@ -127,10 +134,16 @@ public final class RMascota_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    </head>\r\n");
       out.write("    \r\n");
       out.write("    \r\n");
+<<<<<<< HEAD
       out.write("            <body>\r\n");
       out.write("                \r\n");
       out.write("                <div id=\"contenedor_carga\"><div id=\"contereal\">\r\n");
       out.write("            <div id=\"preloader_1\">\r\n");
+=======
+      out.write("    <body>\r\n");
+      out.write("        <div id=\"contenedor_carga\"><div id=\"contereal\">\r\n");
+      out.write("           <div id=\"preloader_1\">\r\n");
+>>>>>>> aa26903cb0a31f547eb04724f78da0836ad6282d
       out.write("                <span></span>\r\n");
       out.write("            <span></span>\r\n");
       out.write("            <span></span>\r\n");
@@ -138,7 +151,12 @@ public final class RMascota_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            <span></span>\r\n");
       out.write("            </div>\r\n");
       out.write("            </div>\r\n");
+<<<<<<< HEAD
       out.write("                </div>\r\n");
+=======
+      out.write("        </div>\r\n");
+      out.write("        <div id=\"principal\" disabled=\"false\">\r\n");
+>>>>>>> aa26903cb0a31f547eb04724f78da0836ad6282d
       out.write("        <form name=\"\"  method=\"post\" action=\"/RegistroMascota\" enctype=\"multipart/form-data\">\r\n");
       out.write("            <div class=\"dos\" id=\"derechod\">\r\n");
       out.write("                    \r\n");
@@ -161,6 +179,7 @@ public final class RMascota_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    <input type=\"text\" id=\"edadmas\" name=\"edadmas\" onkeypress=\"numeros()\" placeholder=\"Edad de la mascota\" maxlength=\"3\" style=\"width:250px; height:35px; font-size: 15px;\"/>\r\n");
       out.write("                    <br> <br>\r\n");
       out.write("                    </center>\r\n");
+<<<<<<< HEAD
       out.write("                    <div id=\"radios\">\r\n");
       out.write("              <label for=\"Macho\"></label>\r\n");
       out.write("              <input  id=\"Macho\" name=\"radio\" type=\"radio\" value=\"Macho\"/>Macho<br><br>\r\n");
@@ -176,10 +195,30 @@ public final class RMascota_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    <br> <br>\r\n");
       out.write("                    \r\n");
       out.write("                    \r\n");
+=======
+      out.write("                    \r\n");
+      out.write("                    <div id=\"contenedorsito\">\r\n");
+      out.write("                    \r\n");
+      out.write("                    <div id=\"radios\">\r\n");
+      out.write("              <text style=\"color: white\">Macho<label for=\"Macho\"></label>\r\n");
+      out.write("              <input  id=\"Macho\" name=\"radio\" type=\"radio\" value=\"Macho\"/><br><br>\r\n");
+      out.write("              <text style=\"color: white\">Hembra<label for=\"Hembra\"></label>\r\n");
+      out.write("              <input  id=\"Hembra\" name=\"radio\" type=\"radio\" value=\"Hembra\"/>\r\n");
+      out.write("              \r\n");
+      out.write("              <span id=\"slider\"></span>\r\n");
+      out.write("            </div>\r\n");
+      out.write("            \r\n");
+      out.write("                        <div>\r\n");
+      out.write("                    <textarea name=\"Descripcion\" placeholder=\"Realiza una breve descripción acerca de tu mascota.\"  maxlength=\"50\"\r\n");
+      out.write("                              style=\"width: 400px; height: 150px\" ></textarea>\r\n");
+      out.write("                              \r\n");
+      out.write("                    <br> <br>\r\n");
+>>>>>>> aa26903cb0a31f547eb04724f78da0836ad6282d
       out.write("                    <input type=\"file\" name=\"data\" />\r\n");
       out.write("                    <p align=\"right\">\r\n");
       out.write("                        <input type=\"submit\" class=\"boton\" value=\"Registra\" id=\"botreg\" />\r\n");
       out.write("                    </p>\r\n");
+<<<<<<< HEAD
       out.write("                        </div></center>\r\n");
       out.write("                    </div>\r\n");
       out.write("                \r\n");
@@ -196,6 +235,30 @@ public final class RMascota_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                contenedor.style.display='none';\r\n");
       out.write("            }\r\n");
       out.write("            \r\n");
+=======
+      out.write("                \r\n");
+      out.write("</div></div>\r\n");
+      out.write("                <div class=\"dos\" id=\"izquierdo\">\r\n");
+      out.write("                    <img src=\"I:\\Desktop\\PetPe\\build\\web\\data\\1523939545741.jpg\" width=\"500px\" alt=\"MALDITASEA\">\r\n");
+      out.write("                </div>\r\n");
+      out.write("                    </div>    \r\n");
+      out.write("        </form>\r\n");
+      out.write("        </div>\r\n");
+      out.write("            \r\n");
+      out.write("        <script>\r\n");
+      out.write("             var contenedor=document.getElementById('contenedor_carga');\r\n");
+      out.write("            window.onload=function(){\r\n");
+      out.write("               \r\n");
+      out.write("                contenedor.style.visivility='hidden';\r\n");
+      out.write("                \r\n");
+      out.write("\r\n");
+      out.write("                contenedor.style.opacity='0';\r\n");
+      out.write("            }\r\n");
+      out.write("            function uno(){\r\n");
+      out.write("                contenedor.remove();\r\n");
+      out.write("            }\r\n");
+      out.write("            setTimeout(uno, 1200);\r\n");
+>>>>>>> aa26903cb0a31f547eb04724f78da0836ad6282d
       out.write("        </script>\r\n");
       out.write("    </body>\r\n");
       out.write("</html>");

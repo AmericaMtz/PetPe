@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <Context path="/PetPe"/>
+=======
+<Context antiJARLocking="true" path="/PetPe"/>
+>>>>>>> aa26903cb0a31f547eb04724f78da0836ad6282d
